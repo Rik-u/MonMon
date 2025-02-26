@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WalletForm from './components/WalletForm';
+import WalletList from './components/WalletList';
+import TransactionForm from './components/TransactionForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Finance Tracker</h1>
+      <WalletForm />
+      <WalletList />
+      {/* Replace with actual walletId when available */}
+      <TransactionForm walletId="60b5f37d18a4c82d2f0a7bfa" />
     </div>
   );
 }
