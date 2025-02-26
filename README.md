@@ -11,6 +11,6 @@ cd frontend
 npm install
 ```
 
-Create .env and add this
+Create .env in backend folder and add this
 ```MONGO_URI = mongodb+srv://<usernam>:<password>@monmon.kdqkc.mongodb.net/?retryWrites=true&w=majority&appName=MonMon```
 Change username and password
